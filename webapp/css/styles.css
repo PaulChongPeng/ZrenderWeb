@@ -1,0 +1,401 @@
+@charset "utf-8";
+
+ol, ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  margin: 0px auto;
+  position: absolute;
+  font-family: Microsoft YaHei;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.background {
+  margin: 0px auto;
+  display: block;
+  width: 1600px;
+}
+
+.background img {
+  width: 100%;
+  height: 700px;
+}
+
+.bydtitle {
+  position: absolute;
+  left: 185.76px;
+  top: 18px;
+  width: 343px;
+  height: 61px;
+}
+
+.bydbottom {
+  position: absolute;
+  left: 540px;
+  top: 630px;
+  width: 522px;
+  height: 80.9px;
+  font-family: Microsoft YaHei;
+  font-size: 16px;
+  line-height: 29px;
+  text-align: center;
+  color: #9A9A9B;
+}
+
+.line1 a {
+  margin-left: 255px;
+  outline:none;
+}
+
+.homepagebackground {
+  position: absolute;
+  left: 187.2px;
+  top: 166.5px;
+  width: 1066px;
+  height: 330px;
+}
+
+h2 {
+  position: absolute;
+  left: 187.2px;
+  top: 490px;
+  width: 90px;
+  height: 26px;
+  font-size: 22pt;
+  color: #1997EC;
+}
+
+.contenthome {
+  position: absolute;
+  left: 187.2px;
+  top: 560px;
+  width: 1066px;
+  height: 83px;
+  font-size: 15px;
+  color: #4D4D4D;
+  line-height: 30px;
+}
+
+.ul_left {
+  width: 1000px;
+  position: absolute;
+  left: 147px;
+  top: -16px;
+}
+
+.ul_left li {
+  float: left;
+  list-style-type: none;
+  width: 122px;
+  text-align: center;
+  height: 60px;
+  color: #FFFFFF;
+  line-height: 60px;
+}
+
+.ul_left li a {
+  color: #FFFFFF;
+  display: block;
+  width: 108px;
+  height: 60px;
+}
+
+.ul_left li a:active {
+  background-image: url("/BraceletS/images/bg_text_pressed.png");
+}
+
+#need {
+  position: absolute;
+  left: 620px;
+  top: 210px;
+  padding: 20px;
+}
+
+.line {
+  width: 330px;
+  height: 52px;
+  background-image: url("/BraceletS/images/btn_normal.png");
+  line-height: 52px;
+}
+
+.line3 {
+  width: 330px;
+  height: 52px;
+  background-image: url("/BraceletS/images/btn_normal.png");
+  margin-top: 15px;
+  line-height: 52px;
+}
+
+.line1 {
+  width: 330px;
+  height: 52px;
+  line-height: 52px;
+}
+
+.line2 input {
+  width: 330px;
+  height: 46px;
+  background-image: url("/BraceletS/images/btn_bg_dl_normal.png");
+  border: none;
+  line-height: 46px;
+  color: #FFFFFF;
+  font-family: "Microsoft YaHei";
+}
+
+.icuser {
+  width: 24px;
+  margin-left: 10px;
+  margin-top: 13px;
+}
+
+.searchBox {
+  position: absolute;
+  width: 275px;
+  height: 24px;
+  color: gray;
+  border: none;
+  margin-left: 5px;
+  margin-top: 13px;
+  outline: medium;
+  font-family: "Microsoft YaHei"
+}
+
+.group {
+  position: absolute;
+  width: 150px;
+  height: 550px;
+  left: 50px;
+  top: 180px;
+}
+
+.group1 {
+  width: 71px;
+  height: 16px;
+  text-align: center;
+  font-size: 15px;
+  color: #1997EC;
+  margin-top: 10px;
+  margin-left: 45px;
+}
+
+.groupmember {
+  position: absolute;
+  width: 150px;
+  height: 500px;
+}
+
+.groupmember li {
+  width: 150px;
+  height: 30px;
+  margin-left: -42px;
+  font-size: 16px;
+  color: #4D4D4D;
+  line-height: 30px;
+}
+
+.groupmember li a {
+  display: inline-block;
+  width: 150px;
+  height: 30px;
+  text-align: center;
+  color: #4D4D4D;
+  font-size: 16px;
+}
+
+.groupmember li a:active {
+  background-image: url("/BraceletS/images/bg_left_text_pressed.png");
+}
+
+.iddiv {
+  position: absolute;
+  left: 200px;
+  top: 160px;
+  width: 950px;
+  height: 90px;
+}
+
+.id {
+  position: absolute;
+  left: 10px;
+  top: 25px;
+  font-size: 16px;
+  color: #4D4D4D;
+}
+
+.date {
+  position: absolute;
+  left: 250px;
+  top: 25px;
+  font-size: 16px;
+  color: #4D4D4D;
+}
+
+.searchBox1 {
+  position: absolute;
+  left: 60px;
+  top: 12px;
+  color: #4D4D4D;
+  width: 164px;
+  height: 44px;
+  background-image: url("/BraceletS/images/btn_gh_date_pressd.png");
+  border: none;
+}
+
+.searchBox2 {
+  position: absolute;
+  left: 300px;
+  top: 12px;
+  color: #4D4D4D;
+  width: 164px;
+  height: 44px;
+  background-image: url("/BraceletS/images/btn_gh_date_pressd.png");
+  border: none;
+  height: 44px;
+}
+
+.inquiry {
+  position: absolute;
+  left: 520px;
+  top: 12px;
+  width: 93px;
+  height: 46px;
+  border: none;
+  color: #FFFFFF;
+  background-image: url("/BraceletS/images/bg_btn_action2.png");
+}
+
+.statistic {
+  position: absolute;
+  left: 650px;
+  top: 12px;
+  width: 93px;
+  height: 46px;
+  border: none;
+  color: #FFFFFF;
+  background-image: url("/BraceletS/images/bg_btn_action1.png");
+  height: 46px;
+}
+
+.statistic1 {
+  position: absolute;
+  left: 650px;
+  top: 12px;
+  width: 93px;
+  height: 46px;
+  border: none;
+  color: #FFFFFF;
+  background-image: url("/BraceletS/images/bg_btn_action2.png");
+  height: 46px;
+}
+
+.export {
+  position: absolute;
+  left: 780px;
+  top: 12px;
+  width: 93px;
+  height: 46px;
+  border: none;
+  color: #FFFFFF;
+  background-image: url("/BraceletS/images/bg_btn_action1.png");
+  height: 46px;
+}
+
+.export1 {
+  position: absolute;
+  left: 780px;
+  top: 12px;
+  width: 93px;
+  height: 46px;
+  border: none;
+  color: #FFFFFF;
+  background-image: url("/BraceletS/images/bg_btn_action3.png");
+  height: 46px;
+}
+
+.table1 {
+  position: absolute;
+  left: 200px;
+  top: 250px;
+  width: 880px;
+  height: 450px;
+}
+
+.heartbit {
+  position: absolute;
+  left: 400px;
+  top: 250px;
+  width: 880px;
+  height: 450px;
+  border: 1px solid red;
+}
+
+.time1 time {
+  position: absolute;
+  left: 400px;
+  top: 710px;
+  width: 40px;
+  height: 13px;
+  font-size: 15px;
+  color: #4D4D4D;
+}
+
+.time2 time {
+  position: absolute;
+  left: 1240px;
+  top: 710px;
+  width: 40px;
+  height: 13px;
+  font-size: 15px;
+  color: #4D4D4D;
+}
+
+.steps {
+  position: absolute;
+  left: 400px;
+  top: 250px;
+  width: 880px;
+  height: 450px;
+}
+
+.steps img, .heartbit img {
+  width: 880px;
+  height: 450px;
+}
+
+.table1 table {
+  display: table;
+  border-collapse: separate;
+  border-bottom: 1px dashed #ccc;
+  color: #4D4D4D;
+  font-size: 16px;
+}
+
+tbody {
+  display: table-row-group;
+  vertical-align: middle;
+}
+
+tr {
+  display: table-row;
+  height: 23px;
+}
+
+th {
+  border: 0.5px solid #B3B3B3;
+  background-color: #E0E0E0;
+}
+
+.table1 td {
+  height: 23px;
+  text-align: center;
+  line-height: 23px;
+  color: #4D4D4D;
+  border: 0.5px solid #B3B3B3;
+}

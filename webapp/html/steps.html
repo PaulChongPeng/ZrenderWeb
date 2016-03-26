@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>手环信息查询系统</title>
+<script type="text/javascript" src="/BraceletS/js/3rdPartyLibrary/echarts.min.js"></script>
+<link rel="stylesheet" type="text/css" href="/BraceletS/css/titlepub.css" />
+<link rel="stylesheet" type="text/css" href="/BraceletS/css/heart.css" />
+<link rel="stylesheet" media="screen" href="/BraceletS/css/bootstrap.min.css">
+<link rel="stylesheet" media="screen" href="/BraceletS/css/bootstrap-datetimepicker.min.css">
+<script type="text/javascript" src="/BraceletS/js/3rdPartyLibrary/jquery.js"></script>
+<script type="text/javascript" src="/BraceletS/js/3rdPartyLibrary/esl.js"></script>
+<script type="text/javascript" src="/BraceletS/js/3rdPartyLibrary/Chart.js"></script>
+<script type="text/javascript" src="/BraceletS/js/3rdPartyLibrary/bootstrap.min.js"></script>
+<script type="text/javascript" src="/BraceletS/js/3rdPartyLibrary/bootstrap-datetimepicker.js" charset="UTF-8"></script>
+<script type="text/javascript" src="/BraceletS/js/3rdPartyLibrary/bootstrap-datetimepicker.zh-CN.js" charset="UTF-8"></script>
+<script type="text/javascript" src="/BraceletS/js/3rdPartyLibrary/FileSaver.js" charset="UTF-8"></script>
+</head>
+<body>
+
+ <script type="text/javascript" src="/BraceletS/js/jsForPublic/head.js"></script>
+ <script type="text/javascript" src="/BraceletS/js/jsForPublic/nav.js"></script>
+ <script type="text/javascript" src="/BraceletS/js/jsForPublic/employee.js" charset="UTF-8"></script>
+ <script type="text/javascript" src="/BraceletS/js/jsForPublic/disableoption.js" charset="UTF-8"></script>
+ <div class="main">
+  <div class="left">
+   <div class="left_header">
+    <b>组员列表</b>
+   </div>
+   <div class="left_content">
+    <ul id="contents"></ul>
+   </div>
+   <script type="text/javascript" src="/BraceletS/js/jsForHeart/employeeList.js" charset="UTF-8"></script>
+  </div>
+  <div class="right">
+   <div class="right-buttons">
+
+    <div class="button_group">
+     <label class="data">日期</label> <input class="select_data" id="input_data" type="text" placeholder="请选择日期" readonly=""> <input
+      class="querybutton" type="button" value="查询" onclick="initxAxis()" /> <input class="refreshbutton" type="button" value="刷新"
+      onclick="initxAxis()" /> <input class="exportbutton" id="export_button" type="button" value="导出" onclick="exportSteps()" />
+    </div>
+    <div class="up_number" id="personnel">
+     <label class="numberid_location">工号</label> <input class="numberid_input" id="input_id" type="text" placeholder="请输入工号">
+    </div>
+    <script type="text/javascript" src="/BraceletS/js/jsForLocation/currentUser.js"></script>
+
+   </div>
+   <script type="text/javascript" src="/BraceletS/js/jsForPublic/disablebutton.js"></script>
+   <script type="text/javascript" src="/BraceletS/js/3rdPartyLibrary/datetimepicker.js"></script>
+   <div>
+    <label id="information"></label>
+   </div>
+   <div id="main" style="width:910px;height:550px;border: 1px solid #000000;"></div>
+   <script src="/BraceletS/js/jsForSteps/steps.js"></script>
+  </div>
+ </div>
+
+ <div class="footer">版权所有&copy;比亚迪股份有限公司 粤ICP 备10216027号</div>
+</body>
+</html>
+

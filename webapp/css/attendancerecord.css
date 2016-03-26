@@ -1,0 +1,225 @@
+body {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  text-align: center;
+  background: #ffffff;
+}
+
+a {
+  text-decoration: none;
+}
+
+.main {
+  overflow: hidden;
+  width: 1270px;
+  display: block;
+}
+
+.left {
+  padding-top: 10px;
+  float: left;
+  width: 220px;
+}
+
+.left .left_header {
+  width: 120px;
+  color: #0986ff;
+  font-size: 16px;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  float: right;
+}
+
+.left .left_content {
+  text-align: left;
+  overflow-y: scroll;
+  width: 220px;
+  height: 600px;
+  display: inline-block;
+}
+
+.left ul {
+  width: 120px;
+  float: right;
+}
+
+.left ul li {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: 16px;
+  color: #0986ff;
+}
+
+
+.left ul li:hover {
+  background: #a5a5a5;
+}
+
+.right {
+  float: left;
+  width: 910px;
+  overflow: hidden;
+}
+
+#empIdWarning {
+  font-size: 14px;
+  font-weight: bold;
+  color: #FF0000;
+  text-align: left;
+  margin-left: 110px;
+  margin-top: 20px;
+  margin-bottom: -20px;
+}
+
+.right.table {
+  float: left;
+  width: 910px;
+  height: 670px;
+  overflow: hidden;
+}
+
+.condition {
+  float: left;
+  padding-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 50px;
+  height: 70px;
+  text-align: center;
+}
+
+.buttonGroup {
+  float: right;
+  padding-top: 20px;
+}
+
+.id {
+  margin-left: 10px;
+  font-size: 16px;
+  color: #4D4D4D;
+}
+
+.date {
+  margin-left: 20px;
+  font-size: 16px;
+  color: #4D4D4D;
+}
+
+.id {
+  visibility: hidden;
+}
+
+.searchBox1 {
+  margin-left: 10px;
+  color: #4D4D4D;
+  width: 166px;
+  height: 46px;
+  background-image: url("/BraceletS/images/btn_gh_date_pressd.png");
+  border: none;
+  font-size: 16px;
+  visibility: hidden;
+}
+
+.searchBox2 {
+  margin-left: 10px;
+  color: #4D4D4D;
+  width: 166px;
+  height: 46px;
+  background-image: url("/BraceletS/images/btn_gh_date_pressd.png");
+  border: none;
+  font-size: 16px;
+}
+
+.inquiry {
+  margin-left: 40px;
+  width: 93px;
+  height: 46px;
+  border: none;
+  font-weight: bold;
+  color: #FFFFFF;
+  background-image: url(../images/bg_btn_action2.png);
+}
+
+.export, .statistic {
+  margin-left: 20px;
+  width: 93px;
+  height: 46px;
+  border: none;
+  color: #FFFFFF;
+  font-weight: bold;
+  background-image: url(../images/bg_btn_action1.png);
+}
+
+.table1 {
+  margin-left: 50px;
+  margin-top: 25px;
+}
+
+.table1 table {
+  display: table;
+  border-collapse: collapse;
+  border: solid 1px #ccc;
+  color: #4D4D4D;
+  font-size: 16px;
+  width: 100%;
+}
+
+tbody {
+  display: table-row-group;
+  vertical-align: middle;
+}
+
+tr {
+  display: table-row;
+  height: 23px;
+}
+
+#attendanceInfoTable th {
+  border: 1px solid #B3B3B3;
+  background-color: #E0E0E0;
+  text-align: center;
+}
+
+.serialNumber_th {
+  width: 108px;
+}
+
+.date_th {
+  width: 295px;
+}
+
+.time_th {
+  width: 167px;
+}
+
+.location_th {
+  width: 295px;
+}
+
+#attendanceInfoTable td {
+  height: 23px;
+  text-align: center;
+  line-height: 23px;
+  color: #4D4D4D;
+  border: 1px solid #B3B3B3;
+}
+
+#attendenceWarning {
+  padding-top: 30px;
+  font-size: 28px;
+  font-weight: bold;
+  color: #FF0000;
+}
+
+.bydbottom {
+  margin-left: 70px;
+  padding-top: 20px;
+  padding-bottom: 20px width: 522px;
+  height: 80.9px;
+  font-family: Microsoft YaHei;
+  font-size: 16px;
+  line-height: 29px;
+  text-align: center;
+  color: #9A9A9B;
+}

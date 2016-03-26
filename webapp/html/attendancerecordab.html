@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>异常信息</title>
+<script type="text/javascript" src="/BraceletS/js/3rdPartyLibrary/echarts.min.js"></script>
+<link rel="stylesheet" type="text/css" href="/BraceletS/css/titlepub.css" />
+<link rel="stylesheet" type="text/css" href="/BraceletS/css/attendancerecordab.css" />
+<link rel="stylesheet" media="screen" href="/BraceletS/css/bootstrap.min.css">
+<link rel="stylesheet" media="screen" href="/BraceletS/css/bootstrap-datetimepicker.min.css">
+<script type="text/javascript" src="/BraceletS/js/3rdPartyLibrary/jquery.js"></script>
+<script type="text/javascript" src="/BraceletS/js/3rdPartyLibrary/bootstrap.min.js"></script>
+<script type="text/javascript" src="/BraceletS/js/3rdPartyLibrary/bootstrap-datetimepicker.js" charset="UTF-8"></script>
+<script type="text/javascript" src="/BraceletS/js/3rdPartyLibrary/bootstrap-datetimepicker.zh-CN.js" charset="UTF-8"></script>
+<script type="text/javascript" src="/BraceletS/js/jsForAttendanceab/attendanceab.js"></script>
+</head>
+
+<body>
+  <script type="text/javascript" src="/BraceletS/js/jsForPublic/head.js"></script>
+  <script type="text/javascript" src="/BraceletS/js/jsForPublic/nav.js"></script>
+  <script type="text/javascript" src="/BraceletS/js/jsForPublic/employee.js" charset="UTF-8"></script>
+  <script type="text/javascript" src="/BraceletS/js/jsForPublic/disableoption.js" charset="UTF-8"></script>
+
+  <div class="main">
+    <div class="left">
+      <div class="left_header">
+        <b>组员列表</b>
+      </div>
+      <div class="left_content">
+        <ul id="contents"></ul>
+      </div>
+      <script type="text/javascript" src="/BraceletS/js/jsForAttendanceab/employee.js"></script>
+    </div>
+    <div class="right">
+      <div class="right-buttons">
+        <div class="button_group">
+          <label class="data">日期</label>
+          <input class="select_data" id="query_time" type="text" placeholder="请选择日期" readonly="">
+          <input class="querybutton" type="button" value="查询" onclick="queryAttendanceab()" />
+          <input class="refreshbutton" type="button" value="刷新" onclick="queryAttendanceab()" />
+        </div>
+        <script type="text/javascript" src="/BraceletS/js/3rdPartyLibrary/datetimepicker.js"></script>
+        <div class="up_number" id="personnel">
+          <label class="numberid_location">工号</label>
+          <input class="numberid_input" id="emp_id" type="text" placeholder="请输入工号">
+        </div>
+        <script type="text/javascript" src="/BraceletS/js/jsForAttendanceab/currentUser.js"></script>
+      </div>
+      <div class="table1">
+        <table id="attendanceInfoTable" cellspacing="0" cellpadding="0" width="100%">
+          <tbody>
+            <tr>
+              <th width="15%">序号</th>
+              <th width="35%">日期</th>
+              <th width="50%">异常原因</th>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+  <div class="footer">版权所有&copy;比亚迪股份有限公司 粤ICP 备10216027号</div>
+</body>
+</html>
+

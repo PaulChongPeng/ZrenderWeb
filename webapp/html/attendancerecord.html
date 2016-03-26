@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>考勤记录</title>
+<link rel="stylesheet" type="text/css" href="/BraceletS/css/titlepub.css" />
+<link rel="stylesheet" type="text/css" href="/BraceletS/css/attendancerecord.css" />
+<link rel="stylesheet" media="screen" href="/BraceletS/css/bootstrap.min.css">
+<link rel="stylesheet" media="screen" href="/BraceletS/css/bootstrap-datetimepicker.min.css">
+
+<script type="text/javascript" src="/BraceletS/js/3rdPartyLibrary/jquery.js"></script>
+<script type="text/javascript" src="/BraceletS/js/3rdPartyLibrary/bootstrap.min.js"></script>
+<script type="text/javascript" src="/BraceletS/js/3rdPartyLibrary/bootstrap-datetimepicker.js" charset="UTF-8"></script>
+<script type="text/javascript" src="/BraceletS/js/3rdPartyLibrary/bootstrap-datetimepicker.zh-CN.js" charset="UTF-8"></script>
+<script type="text/javascript" src="/BraceletS/js/3rdPartyLibrary/FileSaver.js" charset="UTF-8"></script>
+<script type="text/javascript" src="/BraceletS/js/jsForAttendance/attendance.js"></script>
+
+</head>
+
+<body>
+
+  <script type="text/javascript" src="/BraceletS/js/jsForPublic/head.js"></script>
+  <script type="text/javascript" src="/BraceletS/js/jsForPublic/nav.js"></script>
+  <script type="text/javascript" src="/BraceletS/js/jsForPublic/employee.js" charset="UTF-8"></script>
+  <script type="text/javascript" src="/BraceletS/js/jsForPublic/disableoption.js" charset="UTF-8"></script>
+
+  <div class="main">
+    <div class="left">
+      <div class="left_header">
+        <b>组员列表</b>
+      </div>
+      <div class="left_content">
+        <ul id="contents"></ul>
+      </div>
+      <script type="text/javascript" src="/BraceletS/js/jsForAttendance/employee.js"></script>
+    </div>
+    <div class="right">
+      <div id="empIdWarning"></div>
+      <div class="condition">
+        <input class="searchBox1" name="" type="hidden" id="emp_id" />
+        <label class="id" id="emp_id_label">工 号</label> 
+        <input class="searchBox1" name="" type="text" id="emp_id_HR" placeholder="请输入工号"
+          onfocus="if(placeholder=='请输入工号') {placeholder='' }" 
+          onblur="if (placeholder=='') {placeholder='请输入工号'}"
+          onchange="document.getElementById('emp_id').value = value" />
+        <script type="text/javascript" src="/BraceletS/js/jsForAttendance/currentUser.js"></script>
+        <label class="date">日期</label> 
+        <select class="searchBox2" id="query_time">
+        </select>
+        <script type="text/javascript" src="/BraceletS/js/jsForAttendance/datetimePicker.js"></script>
+      </div>
+      <div class="buttonGroup">
+        <input class="inquiry" id="query" type="button" value="查询" onclick="queryAttendance()" /> <input class="statistic" type="button"
+          value="统计" onclick="statisticsAttendance()" />
+        <!-- <input class="export" type="button" value="导出" onclick="exportAttendace()" /> -->
+      </div>
+      <div class="table1">
+        <table id="attendanceInfoTable">
+          <tbody>
+          </tbody>
+        </table>
+      </div>
+      <div id="attendenceWarning"></div>
+    </div>
+  </div>
+  <div class="bydbottom">版权所有©比亚迪股份有限公司 粤ICP 备10276027号</div>
+
+  <div></div>
+
+</body>
+</html>

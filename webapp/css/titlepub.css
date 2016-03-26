@@ -1,0 +1,179 @@
+body {
+  padding: 0;
+  margin: 0;
+  width: auto;
+  text-align: center;
+  background: #ffffff;
+}
+
+a {
+  text-decoration: none;
+}
+
+.welcome a:hover {
+  text-decoration: none;
+  color: #4d4d4d;
+}
+
+.welcome a:link {
+  text-decoration: none;
+  color: #4d4d4d;
+}
+
+.welcome a:visited {
+  text-decoration: none;
+  color: #4d4d4d;
+}
+
+.welcome a:active {
+ text-decoration: none;
+  color: #4d4d4d;
+}
+
+.resetpsw a:hover {
+  text-decoration: none;
+  color: #4d4d4d;
+}
+
+.resetpsw a:link {
+  text-decoration: none;
+  color: #4d4d4d;
+}
+
+.resetpsw a:visited {
+  text-decoration: none;
+  color: #4d4d4d;
+}
+
+.resetpsw a:active {
+ text-decoration: none;
+  color: #4d4d4d;
+}
+
+.head {
+  height: auto;
+  width: 100%;
+  padding: 0;
+  float: left;
+}
+
+.head .head_left {
+  margin: 0.5% 0 0.5% 14.5%;
+  float: left;
+  width: auto;
+  height: 60px;
+  display: inline;
+}
+
+.head .head_right {
+  margin: 2% 10% 1% 1%;
+  float: right;
+  font-size: 16px;
+  color: #4d4d4d;
+  width: auto;
+  height: 22px;
+  display: inline;
+}
+
+.welcome {
+  float: left;
+  width: 150px;
+  height: auto;
+}
+
+.welcome a {
+  font-size: 16px;
+  color: #4d4d4d;
+  text-decoration: none;
+}
+
+.resetpsw a {
+  font-size: 16px;
+  color: #4d4d4d;
+  text-decoration: none;
+}
+
+.welcome img {
+  margin-left: 15px;
+}
+
+.resetpsw {
+  float: left;
+  width: 90px;
+  height: auto;
+}
+
+.resetpsw img {
+  margin-left: 15px;
+}
+
+.loginout {
+  float: left;
+  width: auto;
+  height: auto;
+  margin-left: 15px;
+}
+
+.loginout input {
+  position: absolute;
+  background-color: #FFFFFF;
+  font-size: 16px;
+  border: none;
+  color: #4d4d4d;
+  outline:medium;
+}
+
+.menu {
+  height: 60px;
+  background: #0986ff;
+  line-height: 60px;
+  text-align: center;
+  float: left;
+  width: 100%;
+}
+
+.menu ul {
+  margin-left: 14.5%;
+  list-style: none;
+}
+
+.menu ul li {
+  list-style: none;
+  float: left;
+  width: 120px;
+  list-style-type: none;
+}
+
+#li_location {
+  visibility: hidden;
+}
+
+#li_identityau {
+  visibility: hidden;
+}
+
+.menu ul li a {
+  color: #ffffff;
+  font-size: 15px;
+  display: block;
+  height: 60px;
+  text-decoration: none;
+}
+
+.menu ul li a:hover {
+  background: #f08821;
+  -webkit-transform: skew(-30deg);
+  -moz-transform: skew(-30deg);
+  -o-transform: skew(-30deg);
+  transform: skew(-30deg);
+  text-decoration: none;
+}
+
+.on {
+  background: #f08821;
+  -webkit-transform: skew(-30deg);
+  -moz-transform: skew(-30deg);
+  -o-transform: skew(-30deg);
+  transform: skew(-30deg);
+  text-decoration: none;
+}

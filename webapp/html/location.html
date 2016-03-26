@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>手环信息查询系统</title>
+<link rel="stylesheet" type="text/css" href="/BraceletS/css/titlepub.css" />
+<link rel="stylesheet" type="text/css" href="/BraceletS/css/location.css" />
+<link rel="stylesheet" media="screen" href="/BraceletS/css/bootstrap.min.css">
+<link rel="stylesheet" media="screen" href="/BraceletS/css/bootstrap-datetimepicker.min.css">
+<script type="text/javascript" src="/BraceletS/js/3rdPartyLibrary/jquery.js"></script>
+<script type="text/javascript" src="/BraceletS/js/3rdPartyLibrary/esl.js"></script>
+<script type="text/javascript" src="/BraceletS/js/3rdPartyLibrary/Chart.js"></script>
+<script type="text/javascript" src="/BraceletS/js/3rdPartyLibrary/bootstrap.min.js"></script>
+<script type="text/javascript" src="/BraceletS/js/3rdPartyLibrary/bootstrap-datetimepicker.js" charset="UTF-8"></script>
+<script type="text/javascript" src="/BraceletS/js/3rdPartyLibrary/bootstrap-datetimepicker.zh-CN.js" charset="UTF-8"></script>
+</head>
+<body>
+  <script type="text/javascript" src="/BraceletS/js/jsForPublic/head.js"></script>
+  <script type="text/javascript" src="/BraceletS/js/jsForPublic/nav.js"></script>
+  <script type="text/javascript" src="/BraceletS/js/jsForPublic/employee.js" charset="UTF-8"></script>
+  <script type="text/javascript" src="/BraceletS/js/jsForPublic/disableoption.js" charset="UTF-8"></script>
+  <div class="main">
+    <div class="left">
+      <div class="left_header">
+        <b>组员列表</b>
+      </div>
+      <div class="left_content">
+        <ul id="contents"></ul>
+      </div>
+      <script type="text/javascript" src="/BraceletS/js/jsForLocation/employee.js" charset="UTF-8"></script>
+    </div>
+    <div class="right">
+      <div class="up_number" id="personnel">
+        <label class="numberid_location" id="empIdLabel">工号</label>
+        <input class="input_data" id="input_id" type="text" placeholder="请输入工号">
+      </div>
+      <script type="text/javascript" src="/BraceletS/js/jsForLocation/currentUser.js"></script>
+      <div class="button_group">
+        <label class="date">日期</label>
+        <input class="input_data" id="input_date" type="text" placeholder="请选择日期" readonly="">
+        <label class="begin_time">开始时间</label>
+        <input class="input_time" id="input_start_time" type="text" placeholder="请选择时间" readonly="">
+        <label class="numberid_location">结束时间</label>
+        <input class="input_time" id="input_end_time" type="text" placeholder="请选择时间" readonly="">
+        <input class="querybutton" type="button" value="查询" onclick="queryLocation()" />
+        <input class="refreshbutton" type="button" value="当前" onclick="queryCurrentLocation()" />
+      </div>
+      <script type="text/javascript" src="/BraceletS/js/jsForLocation/datetimepicker.js"></script>
+      <div id="map">
+        <div>
+          <label id="information"></label>
+        </div>
+        <div id="locationpic"></div>
+        <script src="/BraceletS/js/jsForLocation/location.js"></script>
+        <div class="control_group">
+          <input id="startbutton" type="button" onclick="onStartButtonClicked();" />
+          <label>播放速度</label>
+          <select class="select_data" id="select_speed" onchange="adjustSpeed(this[selectedIndex].value)">
+            <option value="1">0.2 X</option>
+            <option value="2">0.5 X</option>
+            <option value="3" selected="selected">正常</option>
+            <option value="4">2 X</option>
+            <option value="5">5 X</option>
+          </select>
+          <label>显示模式</label>
+          <select class="select_data" id="select_mode" onchange="adjustMode(this[selectedIndex].value)">
+            <option value="0" selected="selected">动态显示</option>
+            <option value="1">静态图点</option>
+            <option value="2">线连轨迹</option>
+          </select>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">版权所有&copy;比亚迪股份有限公司 粤ICP 备10216027号</div>
+</body>
+</html>

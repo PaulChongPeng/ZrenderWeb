@@ -1,0 +1,49 @@
+body {
+  text-align: center;
+}
+
+.main {
+  margin: 0 auto;
+  overflow: hidden;
+  width: 100%;
+  height: 580px;
+  display: block;
+}
+
+.up {
+  margin-top: 0.5%;
+  margin-bottom: 0.8%;
+}
+
+.up img {
+  width: 70%;
+  height: 100%;
+}
+
+.down {
+  margin-left: 15%;
+  float: left;
+}
+
+.down h4 {
+  font-size: 26px;
+  color: #1997EC;
+}
+
+.bottom {
+  margin-left: 15%;
+  margin-top: 0.5%;
+  float: left;
+}
+
+.bottom p {
+  width: 83%;
+  text-align: left;
+  line-height: 30px;
+}
+
+.footer {
+  color: #4D4D4D;
+  padding: 20px;
+  width: auto;
+}

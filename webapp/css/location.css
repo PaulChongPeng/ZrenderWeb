@@ -1,0 +1,163 @@
+.up_number {
+  margin-top: 10px;
+}
+
+.main {
+  overflow: hidden;
+  width: 1270px;
+  display: block;
+}
+
+.left {
+  float: left;
+  width: 220px;
+}
+
+.left .left_header {
+  width: 120px;
+  color: #0986ff;
+  font-size: 16px;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  float: right;
+}
+
+.left .left_content {
+  text-align: left;
+  overflow-y: scroll;
+  width: 220px;
+  height: 635px;
+  display: inline-block;
+}
+
+.left ul {
+  width: 120px;
+  float: right;
+}
+
+.left ul li {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: #0986ff;
+}
+
+.left ul li:hover {
+  background: #a5a5a5;
+}
+
+.right {
+  float: left;
+  width: 910px;
+  height: 710px;
+  overflow: hidden;
+}
+
+.button_group {
+  padding-top: 10px;
+  height: 70px;
+  width: 100%;
+  text-align: center;
+}
+
+.date {
+  font-size: 16px;
+  color: #4D4D4D;
+}
+
+#personnel{
+  visibility:hidden;
+}
+
+.input_data {
+  width: 166px;
+  height: 46px;
+  font-size: 16px;
+  color: #4D4D4D;
+  border: none;
+  margin-left:12px;
+  margin-right:12px;
+  background-image: url("/BraceletS/images/btn_gh_date_pressd.png");
+}
+
+.input_time {
+  width: 104px;
+  height: 46px;
+  font-size: 16px;
+  color: #4D4D4D;
+  border: none;
+  margin-left:12px;
+  margin-right:12px;
+  background-image: url("/BraceletS/images/btn_gh_time_pressd.png");
+}
+
+.querybutton {
+  color: #ffffff;
+  width: 93px;
+  height: 46px;
+  border: none;
+  margin-left:25px;
+  margin-right:12px;
+  background-image: url(../images/bg_btn_action2.png);
+}
+
+.refreshbutton {
+  color: #ffffff;
+  width: 93px;
+  height: 46px;
+  border: none;
+  margin-left:12px;
+  margin-right:12px;
+  background-image: url(../images/bg_btn_action3.png);
+}
+
+#map {
+  width: 910px;
+  height: 570px;
+  border: 1px solid #000000;
+}
+
+#locationpic {
+  width: 900px;
+  height: 500px;
+}
+
+.control_group {
+  padding-top: 5px;
+  height: 45px;
+  width: 100%;
+  text-align: left;
+}
+
+#startbutton {
+  width: 74px;
+  height: 30px;
+  margin-left: 5px;
+  margin-right: 30px;
+  border: none;
+  background-image: url("/BraceletS/images/bg_btn_start_enable.png");
+}
+
+.select_data {
+  font-size: 16px;
+  color: #4D4D4D;
+  border: none;
+}
+
+#select_speed {
+  width: 66px;
+  height: 29px;
+  background-image: url("/BraceletS/images/bg_select_speed.png");
+}
+
+#select_mode {
+  width: 90px;
+  height: 29px;
+  background-image: url("/BraceletS/images/bg_select_mode.png");
+}
+
+.footer {
+  color: #4D4D4D;
+  padding: 20px;
+  width: auto;
+}

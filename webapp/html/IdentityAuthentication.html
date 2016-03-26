@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>手环信息查询系统</title>
+<link rel="stylesheet" type="text/css" href="/BraceletS/css/titlepub.css" />
+<link rel="stylesheet" type="text/css" href="/BraceletS/css/identityauthenticanion.css" />
+<link rel="stylesheet" media="screen" href="/BraceletS/css/bootstrap.min.css">
+<script type="text/javascript" src="/BraceletS/js/3rdPartyLibrary/jquery.js"></script>
+<script type="text/javascript" src="/BraceletS/js/3rdPartyLibrary/esl.js"></script>
+<script type="text/javascript" src="/BraceletS/js/3rdPartyLibrary/Chart.js"></script>
+<script type="text/javascript" src="/BraceletS/js/jsForIdentityAuthentication/iauthentication.js"></script>
+
+</head>
+<body>
+  <script type="text/javascript" src="/BraceletS/js/jsForPublic/head.js"></script>
+  <script type="text/javascript" src="/BraceletS/js/jsForPublic/nav.js"></script>
+  <script type="text/javascript" src="/BraceletS/js/jsForPublic/employee.js" charset="UTF-8"></script>
+  <script type="text/javascript" src="/BraceletS/js/jsForPublic/disableoption.js" charset="UTF-8"></script>
+  <div class="main">
+    <div class="up">
+      <label class="braceletid">手环ID</label> <input class="search_id" name="" type="text" id="inid" value="请输入ID"
+        style="font-size:16px;width: 330px;height:52px;background-image: url(/BraceletS/images/btn_pressd.png); border:none;"
+        onfocus="if(value=='请输入ID') {value='' }" onblur="if (value=='') {value='请输入ID'}" />
+    </div>
+    <div class="down">
+      <label class="employeeid">员工ID</label> <input class="search_number" name="" type="text" id="innumber" value="请输入工号"
+        style="font-size:16px;width: 330px;height:52px;background-image: url(/BraceletS/images/btn_pressd.png);border: none;"
+        onfocus="if(value=='请输入工号') {value='' }" onblur="if (value=='') {value='请输入工号'}" /> <input class="bindingbutton" type="button"
+        id="bind" value="绑定" onclick="bindfunction(bind.value)" /> <input class="relievebutton" type="button" id="unbind" value="解除"
+        onclick="bindfunction(unbind.value)" />
+    </div>
+    <div class="bottom">
+      <form action="uploadfile.action" method="post" enctype="multipart/form-data" target="_blank" style="display:inline-block">
+        <input type="file" id="bindfile" name="file" style="font-size:16px;display:inline-block;border:1px solid gray" placeholder="请选择文件..." />
+        <input class="uploadfilebutton" type="submit" id="uploadfile" value="上传" onclick="return uploadFileCheck()" />
+      </form>
+      <input class="bindbatchbutton" type="button" id="tobindbatch" value="批量绑定" onclick="bindbatch(tobindbatch.value)" /> <input
+        class="unbindbatchbutton" type="button" id="tounbindbatch" value="批量解绑" onclick="bindbatch(tounbindbatch.value)" />
+    </div>
+  </div>
+
+  <div class="footer">版权所有&copy;比亚迪股份有限公司 粤ICP 备10216027号</div>
+</body>
+</html>
